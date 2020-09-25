@@ -23,6 +23,7 @@ exports.handler = async () => {
         `,
     })
 
+    // add data from omdb
     const api = new URL('https://www.omdbapi.com/')
 
     api.searchParams.set('apikey', OMDB_API_KEY)
